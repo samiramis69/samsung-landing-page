@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    margin: 0%;
+    text-transform: capitalize;
+    overflow-x: hidden;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    padding: 16px 0px 16px 16px;
+    border-bottom: 2px solid;
+}
+.butter-1{
+    margin-left: 10px;
+}
+
+.button1{
+    outline: none;
+    border: none;
+    background-color: white;
+    font-family: 'SamsungOne',arial,sans-serif;
+    font-size: 16px;
+    padding: 5px 5px;
+}
+.button1:hover{
+    color: white;
+    background-color: black;
+    border-radius: 25px;
+}
+
+.butter-2{
+    margin-left: 150px;
+}
+.button2:hover{
+    color: white;
+    background-color: black;
+    border-radius: 25px;
+
+}
+
+.button2{
+    outline: none;
+    border: none;
+    background-color: white;
+    font-family: 'SamsungOne',arial,sans-serif;
+    font-size: 16px;
+    padding: 5px 5px;
+
+
+}
+
+.img1{
+    margin-right: 20px;
+}
+
+.img2{
+    width: 100vw;
+}
+
+
+h2.big{
+    font-size: 48px;
+    font-family: 'SamsungOne',arial,sans-serif;
+    margin-bottom: 30px;
+    color: white;
+    font-weight: 700;
+
+}
+
+p.small{
+    font-family: 'SamsungOne',arial,sans-serif;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+div.description{
+    position: absolute;
+    top: 260px;
+    margin-left: 70px;
+}
+
+.button3{
+    background-color: white;
+    font-size: 14px;
+    font-family: 'SamsungOne',arial,sans-serif;
+    padding: 10px 24px 11px;
+    border-radius: 25px;
+    border: 2px solid;
+}
+
+.shop{
+    font-size: 38px;
+    font-family: 'SamsungOne',arial,sans-serif;
+    margin-top: 40px;
+    text-align: start;
+    animation-name: sara;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes sara {
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(21%);
+    }
+}
+
+.butter-3{
+    text-align: center;
+    line-height: 90px;
+    width: 1425px;
+
+}
+
+.button4{
+    font-family: 'SamsungOne',arial,sans-serif;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background: white;
+    margin-right: 48px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
