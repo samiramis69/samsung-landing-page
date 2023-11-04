@@ -1,142 +1,426 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-*{
-    margin: 0%;
-    text-transform: capitalize;
-    overflow-x: hidden;
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy");
+* {
+  margin: 0%;
+  text-transform: capitalize;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
 }
 
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(255, 255, 255);
-    align-items: center;
-    padding: 16px 0px 16px 16px;
-    border-bottom: 2px solid;
-}
-.butter-1{
-    margin-left: 10px;
+html {
+  scrollbar-color: #766995 black;
+  scrollbar-width: thin;
 }
 
-.button1{
-    outline: none;
-    border: none;
-    background-color: white;
-    font-family: 'SamsungOne',arial,sans-serif;
-    font-size: 16px;
-    padding: 5px 5px;
-}
-.button1:hover{
-    color: white;
-    background-color: black;
-    border-radius: 25px;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000000;
+  align-items: center;
+  padding: 16px 0px 16px 16px;
+  border-bottom: 2px solid;
 }
 
-.butter-2{
-    margin-left: 150px;
+svg {
+  transition: 0.5s;
 }
-.button2:hover{
-    color: white;
-    background-color: black;
-    border-radius: 25px;
-
+svg:hover {
+  filter: drop-shadow(2px 0px 10px #ffffff) invert(0%);
 }
 
-.button2{
-    outline: none;
-    border: none;
-    background-color: white;
-    font-family: 'SamsungOne',arial,sans-serif;
-    font-size: 16px;
-    padding: 5px 5px;
-
-
+.butter-1 {
+  margin-left: 10px;
 }
 
-.img1{
-    margin-right: 20px;
+.button1 {
+  outline: none;
+  border: none;
+  background-color: black;
+  font-family: "SamsungOne", arial, sans-serif;
+  font-size: 16px;
+  padding: 5px 5px;
+  color: white;
+}
+.button1:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
 }
 
-.img2{
-    width: 100vw;
+.butter-2 {
+  margin-left: 150px;
+}
+.button2:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
 }
 
-
-h2.big{
-    font-size: 48px;
-    font-family: 'SamsungOne',arial,sans-serif;
-    margin-bottom: 30px;
-    color: white;
-    font-weight: 700;
-
+.button2 {
+  outline: none;
+  border: none;
+  background-color: black;
+  font-family: "SamsungOne", arial, sans-serif;
+  font-size: 16px;
+  padding: 5px 5px;
+  color: white;
 }
 
-p.small{
-    font-family: 'SamsungOne',arial,sans-serif;
-    font-size: 18px;
-    color: white;
-    margin-bottom: 20px;
+.img1 {
+  margin-right: 20px;
 }
 
-div.description{
+.img2 {
+  width: 100%;
+}
+
+.big {
+  font-size: 48px;
+  font-family: "SamsungOne", arial, sans-serif;
+  margin-bottom: 30px;
+  color: white;
+  font-weight: 700;
+}
+
+p.small {
+  font-family: "SamsungOne", arial, sans-serif;
+  font-size: 18px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+div.description {
+  position: absolute;
+  top: 260px;
+  margin-left: 70px;
+}
+
+.button3 {
+  background-color: white;
+  font-size: 14px;
+  font-family: "SamsungOne", arial, sans-serif;
+  padding: 10px 24px 11px;
+  border-radius: 25px;
+  border: 2px solid;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.shop {
+  font-size: 38px;
+  font-family: "SamsungOne", arial, sans-serif;
+  margin-top: 40px;
+  text-align: center;
+  color: white;
+  filter: drop-shadow(2px 2px 5px #30297d) invert(0%);
+
+  /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEd7aq-fyaFbQLGMBCNn00rEwksXE7UKU0W9zvUc5T3ztI9NF-sAHKzbLspJsN95Sm8Cg&usqp=CAU);
+    background-size: cover;
+    background-clip: text;
+    color: transparent;*/
+}
+
+.butter-3 {
+  text-align: center;
+  line-height: 90px;
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  counter-reset: salam;
+}
+
+.button4 {
+  font-family: "SamsungOne", arial, sans-serif;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background: black;
+  text-decoration: none;
+  transition-duration: 0.25s;
+  color: white;
+  margin-right: 40px;
+}
+
+.button3:first-of-type {
+  color: #783071;
+}
+.button3:hover {
+  background-color: #783071;
+  color: white;
+  box-shadow: 0px 0px 20px 8px #783071;
+}
+/*.butter-3{
+    counter-reset: section;
+}
+.button4::before{
     position: absolute;
-    top: 260px;
-    margin-left: 70px;
-}
-
-.button3{
+    color: black;
+    counter-increment: section;
+    content: counter(section) ' ';
+    font-family: 'SamsungOne',arial,sans-serif;
     background-color: white;
-    font-size: 14px;
-    font-family: 'SamsungOne',arial,sans-serif;
-    padding: 10px 24px 11px;
-    border-radius: 25px;
-    border: 2px solid;
+    border: 2px solid white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transform: translate(-40px, -5px);
+}*/
+
+.shop::before {
+  position: absolute;
+  left: 0%;
+  bottom: 17px;
+  margin-left: 20px;
+  content: "";
+  background-color: white;
+  width: 330px;
+  height: 5px;
+  filter: drop-shadow(2px 2px 5px #762e6d) invert(0%);
+}
+.shop::after {
+  position: absolute;
+  right: 0%;
+  bottom: 17px;
+  margin-right: 20px;
+  content: "";
+  background-color: white;
+  width: 330px;
+  height: 5px;
+  filter: drop-shadow(2px 2px 5px #762e6d) invert(0%);
 }
 
-.shop{
-    font-size: 38px;
-    font-family: 'SamsungOne',arial,sans-serif;
-    margin-top: 40px;
-    text-align: start;
-    animation-name: sara;
-    animation-duration: 2s;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards;
+/*.button4:nth-child(2n){
+    color: aqua;
+}*/
+
+.img3 {
+  display: inline-block;
+  background-color: #ffffff;
+  outline: 3px solid #a5a4a4;
+  border-radius: 15px;
+  width: 300px;
+  height: 400px;
+  position: relative;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.img3-3 {
+  width: 200px;
+  transform: translateY(90px) translateX(45px);
 }
 
-@keyframes sara {
-    from{
-        transform: translateX(0px);
-    }
-    to{
-        transform: translateX(21%);
-    }
+.img4 {
+  display: inline-block;
+  background-color: #ffffff;
+  outline: 3px solid #a5a4a4;
+  border-radius: 15px;
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  transition: 0.5s;
+}
+.img4-4 {
+  width: 300px;
+  transform: translateY(60px) translateX(0px);
+}
+.img5 {
+  display: inline-block;
+  background-color: #ffffff;
+  outline: 3px solid #a5a4a4;
+  border-radius: 15px;
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  transition: 0.5s;
+}
+.img5-5 {
+  width: 350px;
+  transform: translateY(80px) translateX(-20px);
 }
 
-.butter-3{
+.down-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.down-content h2 {
+  font-family: "SamsungOne", arial, sans-serif;
+  position: absolute;
+  left: 90px;
+  top: 20px;
+}
+
+.img4 h2 {
+  position: absolute;
+  left: 125px;
+}
+.down-content h3 {
+  font-family: "SamsungOne", arial, sans-serif;
+
+  position: absolute;
+  left: 120px;
+  top: 60px;
+  z-index: 1;
+}
+
+.down-content a {
+  position: absolute;
+  bottom: 3%;
+  left: 95px;
+  z-index: 1;
+  color: black;
+  background-color: white;
+  font-size: 14px;
+  font-family: "SamsungOne", arial, sans-serif;
+  padding: 10px 24px 11px;
+  border-radius: 25px;
+  border: 2px solid black;
+  transition: 0.5s;
+  text-decoration: none;
+}
+.down-content a:hover {
+  background-color: #000000;
+  color: white;
+  box-shadow: 0px 0px 20px 1px #5e5b5d;
+}
+
+.img3 {
+  display: inline-block;
+  background-color: #ffffff;
+  outline: 3px solid #a5a4a4;
+  border-radius: 15px;
+  width: 300px;
+  height: 400px;
+  position: relative;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.img3-3 {
+  width: 200px;
+  transform: translateY(90px) translateX(45px);
+}
+
+.tv-audio {
+  background-image: linear-gradient(45deg, #000000, #2b2a2a, #3e3e3e);
+  background-position: right;
+  background-size: 400%;
+  width: 97vw;
+  height: 600px;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 2.5;
+  animation-name: salam;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  position: relative;
+}
+
+@keyframes salam {
+  0% {
+    background-image: linear-gradient(45deg, #000000, #2b2a2a, #3e3e3e);
+    background-position: right;
+    background-size: 400%;
+    width: 97vw;
+    height: 600px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 20px;
     text-align: center;
-    line-height: 90px;
-    width: 1425px;
-
+    line-height: 2.5;
+  }
+  50% {
+    background-image: linear-gradient(45deg, #000000, #2b2a2a, #3e3e3e);
+    background-position: center;
+    background-size: 400%;
+    width: 97vw;
+    height: 600px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 2.5;
+  }
+  100% {
+    background-image: linear-gradient(45deg, #000000, #2b2a2a, #3e3e3e);
+    background-position: left;
+    background-size: 400%;
+    width: 97vw;
+    height: 600px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 2.5;
+  }
 }
 
-.button4{
-    font-family: 'SamsungOne',arial,sans-serif;
-    font-size: 20px;
-    border: none;
-    outline: none;
-    background: white;
-    margin-right: 48px;
+.tv-text {
+  color: #ffffff;
+  font-family: "SamsungOne", arial, sans-serif;
+  font-size: 35px;
+  line-height: 1.5;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+.tv-audio a {
+  position: absolute;
+  bottom: 8%;
+  left: 46%;
+  z-index: 1;
+  color: black;
+  background-color: white;
+  font-size: 16px;
+  font-family: "SamsungOne", arial, sans-serif;
+  padding: 10px 24px 11px;
+  border-radius: 25px;
+  border: 2px solid black;
+  transition: 0.5s;
+  text-decoration: none;
+  line-height: normal;
+}
+.tv-audio a:hover {
+  background-color: #000000;
+  color: white;
+  box-shadow: 0px 0px 20px 1px #5e5b5d;
+}
+.tvs h1 {
+  margin-top: 30px;
+  color: #ffffff;
+  font-family: "SamsungOne", arial, sans-serif;
+  font-size: 60px;
+  text-align: center;
+  position: relative;
+  filter: drop-shadow(2px 2px 5px #30297d) invert(0%);
+}
+.tvs h1::before {
+  position: absolute;
+  left: 0%;
+  margin-left: 20px;
+  bottom: 50%;
+  content: "";
+  background-color: white;
+  width: 660px;
+  height: 5px;
+  filter: drop-shadow(2px 2px 5px #762e6d) invert(0%);
+}
+.tvs h1::after {
+  position: absolute;
+  right: 0%;
+  bottom: 50%;
+  margin-right: 20px;
+  content: "";
+  background-color: white;
+  width: 660px;
+  height: 5px;
+  filter: drop-shadow(2px 2px 5px #762e6d) invert(0%);
+}
