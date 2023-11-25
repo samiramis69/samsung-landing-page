@@ -425,3 +425,12 @@ div.description {
   filter: drop-shadow(2px 2px 5px #762e6d) invert(0%);
   /*salam*/
 }
+
+.ad {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20px;
+}
+.ad1 {
+  border-radius: 5px;
+}
